@@ -25,7 +25,7 @@ problem_texts = [
     "4. Find the total distance traveled by the particle over the time interval $0 \\leq t \\leq \Pi$.",
 ]
 
-class Intro(Scene):
+class Project(Scene):
     def build_canvas(self, stage):
         problem = Title(problem_texts[stage], font_size=30).to_edge(UP)
         self.play(FadeOut(Group(*self.get_top_level_mobjects())), FadeIn(problem))
